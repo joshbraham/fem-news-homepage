@@ -271,10 +271,11 @@ footer {
     position: fixed;
     top: 0;
     right: left;
-    z-index: -1;
     background-color: hsla(0, 0%, 0%, 0.408);
+    z-index: -1;
     opacity: 0;
-    transition: opacity 400ms ease;
+    /* z-index and opacity are being toggled in main.js */
+    transition: all 400ms ease;
   }
 
   .btn-open-menu {
