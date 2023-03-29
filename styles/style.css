@@ -31,6 +31,30 @@ p {
   color: var(--clr-neutral-500);
 }
 
+/* DEBUG */
+
+.screen-width {
+  border-radius: 10px;
+  max-width: 340px;
+  margin: 20px auto 0;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  background-color: indigo;
+  font-weight: bold;
+  text-align: center;
+}
+
+.screen-width::before {
+  content: "Viewport Width: ";
+  font-weight: 500;
+}
+
+.screen-width::after {
+  content: "px";
+  font-weight: 500;
+}
+
 /* Page structure */
 
 .grid-flow {

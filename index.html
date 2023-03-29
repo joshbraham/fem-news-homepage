@@ -1,132 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/favicon-32x32.png"
-		/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-		<link rel="stylesheet" href="styles/reset.css" />
-		<link rel="stylesheet" href="styles/style.css" />
-		<script src="main.js" defer></script>
-		<title>Frontend Mentor | News homepage</title>
-	</head>
-	<body>
-		<div class="nav-overlay"></div>
-		<main class="grid-flow">
-			<!-- grid area: header -->
-			<header>
-				<img class="logo" src="assets/logo.svg" alt="Page Logo" />
-				<!-- nav -->
-				<img class="btn-open-menu" src="assets/icon-menu.svg" alt="Open Menu" />
-				<nav>
-					<img
-						class="btn-close-menu"
-						src="assets/icon-menu-close.svg"
-						alt="Close Menu"
-					/>
-					<ul>
-						<li class="nav-item"><a href="#">Home</a></li>
-						<li class="nav-item"><a href="#">New</a></li>
-						<li class="nav-item"><a href="#">Popular</a></li>
-						<li class="nav-item"><a href="#">Trending</a></li>
-						<li class="nav-item"><a href="#">Categories</a></li>
-					</ul>
-				</nav>
-			</header>
-			<!-- grid area: hero -->
-			<picture>
-				<source
-					srcset="assets/image-web-3-mobile.jpg"
-					media="(max-width: 375px)"
-				/>
-				<img
-					class="hero-image"
-					src="assets/image-web-3-desktop.jpg"
-					alt="Colorful 3D shapes"
-				/>
-			</picture>
-			<!-- grid area: heading -->
-			<h1>The Bright Future of Web 3.0?</h1>
-			<!-- grid area: more -->
-			<div class="read-more">
-				<p>
-					We dive into the next evolution of the web that claims to put the
-					power of the platforms back into the hands of the people. But is it
-					really fulfilling its promise?
-				</p>
-				<button>Read more</button>
-			</div>
-			<!-- grid area: aside -->
-			<aside class="new-articles">
-				<h2>New</h2>
-				<div>
-					<h4><a href="#">Hydrogen VS Electric Cars</a></h4>
-					<p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-				</div>
-				<hr />
-				<div>
-					<h4><a href="#">The Downsides of AI Artistry</a></h4>
-					<p>
-						What are the possible adverse effects of on-demand AI image
-						generation?
-					</p>
-				</div>
-				<hr />
-				<div>
-					<h4><a href="#">Is VC Funding Drying Up?</a></h4>
-					<p>
-						Private funding by VC firms is down 50% YOY. We take a look at what
-						that means.
-					</p>
-				</div>
-			</aside>
-			<!-- articles -->
-			<!-- grid area: article-1 -->
-			<div class="article-1 article">
-				<img src="assets/image-retro-pcs.jpg" alt="A retro computer" />
-				<div>
-					<h3>01</h3>
-					<h4><a href="#">Reviving Retro PCs</a></h4>
-					<p>What happens when old PCs are given modern upgrades?</p>
-				</div>
-			</div>
-			<!-- grid area: article-2 -->
-			<div class="article-2 article">
-				<img
-					src="assets/image-top-laptops.jpg"
-					alt="A keyboard of a gaming laptop"
-				/>
-				<div>
-					<h3>02</h3>
-					<h4><a href="#">Top 10 Laptops of 2022</a></h4>
-					<p>Our best picks for various needs and budgets.</p>
-				</div>
-			</div>
-			<!-- grid area: article-3 -->
-			<div class="article-3 article">
-				<img src="assets/image-gaming-growth.jpg" alt="A PS5 controller" />
-				<div>
-					<h3>03</h3>
-					<h4><a href="#">The Growth of Gaming</a></h4>
-					<p>How the pandemic has sparked fresh opportunities.</p>
-				</div>
-			</div>
-		</main>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="main.js" defer></script>
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <p class="screen-width"></p>
+    <div class="nav-overlay"></div>
+    <main class="grid-flow">
+      <!-- grid area: header -->
+      <header>
+        <img class="logo" src="assets/logo.svg" alt="Page Logo" />
+        <!-- nav -->
+        <img class="btn-open-menu" src="assets/icon-menu.svg" alt="Open Menu" />
+        <nav>
+          <img
+            class="btn-close-menu"
+            src="assets/icon-menu-close.svg"
+            alt="Close Menu"
+          />
+          <ul>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">New</a></li>
+            <li class="nav-item"><a href="#">Popular</a></li>
+            <li class="nav-item"><a href="#">Trending</a></li>
+            <li class="nav-item"><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- grid area: hero -->
+      <picture>
+        <source
+          srcset="assets/image-web-3-mobile.jpg"
+          media="(max-width: 375px)"
+        />
+        <img
+          class="hero-image"
+          src="assets/image-web-3-desktop.jpg"
+          alt="Colorful 3D shapes"
+        />
+      </picture>
+      <!-- grid area: heading -->
+      <h1>The Bright Future of Web 3.0?</h1>
+      <!-- grid area: more -->
+      <div class="read-more">
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button>Read more</button>
+      </div>
+      <!-- grid area: aside -->
+      <aside class="new-articles">
+        <h2>New</h2>
+        <div>
+          <h4><a href="#">Hydrogen VS Electric Cars</a></h4>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr />
+        <div>
+          <h4><a href="#">The Downsides of AI Artistry</a></h4>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h4><a href="#">Is VC Funding Drying Up?</a></h4>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </aside>
+      <!-- articles -->
+      <!-- grid area: article-1 -->
+      <div class="article-1 article">
+        <img src="assets/image-retro-pcs.jpg" alt="A retro computer" />
+        <div>
+          <h3>01</h3>
+          <h4><a href="#">Reviving Retro PCs</a></h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <!-- grid area: article-2 -->
+      <div class="article-2 article">
+        <img
+          src="assets/image-top-laptops.jpg"
+          alt="A keyboard of a gaming laptop"
+        />
+        <div>
+          <h3>02</h3>
+          <h4><a href="#">Top 10 Laptops of 2022</a></h4>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <!-- grid area: article-3 -->
+      <div class="article-3 article">
+        <img src="assets/image-gaming-growth.jpg" alt="A PS5 controller" />
+        <div>
+          <h3>03</h3>
+          <h4><a href="#">The Growth of Gaming</a></h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </main>
 
-		<footer class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>.<br />
-			Coded by
-			<a href="https://www.frontendmentor.io/profile/joshbraham">@joshbraham</a
-			>.
-		</footer>
-	</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.<br />
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/joshbraham">@joshbraham</a
+      >.
+    </footer>
+  </body>
 </html>
