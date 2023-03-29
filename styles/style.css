@@ -45,7 +45,7 @@ p {
 	grid-template-rows: 12fr 39fr 33fr 16fr;
 	grid-template-columns: repeat(3, 350px);
 	grid-template-areas:
-		"logo nav nav"
+		"header header header"
 		"hero hero aside"
 		"heading more aside"
 		"article-1 article-2 article-3";
@@ -53,22 +53,27 @@ p {
 
 /* Header rulesets */
 
-.logo {
-	grid-area: logo;
-	align-self: center;
+.nav-overlay {
+	display: none;
+}
+
+header {
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
 }
 
 /* Navigation */
 
 nav {
-	grid-area: nav;
-	align-self: center;
-	justify-self: end;
 	background-color: var(--clr-neutral-100);
+	justify-self: end;
+	transition: translate 400ms ease;
 }
 
 .btn-open-menu {
-	grid-area: open-menu;
+	display: none;
 }
 
 .btn-close-menu {
@@ -228,16 +233,16 @@ footer {
 		max-width: 340px;
 		margin: 30px auto 75px;
 		grid-template-rows: repeat(9, auto);
-		grid-template-columns: 155px 155px;
+		grid-template-columns: 340px;
 		grid-template-areas:
-			"logo open-menu"
-			"hero hero"
-			"heading heading"
-			"more more"
-			"aside aside"
-			"article-1 article-1"
-			"article-2 article-2"
-			"article-3 article-3";
+			"header"
+			"hero"
+			"heading"
+			"more"
+			"aside"
+			"article-1"
+			"article-2"
+			"article-3";
 	}
 
 	.logo {
@@ -248,16 +253,31 @@ footer {
 		height: 100vh;
 		width: 250px;
 		padding: 20px;
-		position: absolute;
+		position: fixed;
 		right: 0;
 		top: 0;
-		display: none;
+		z-index: 3;
+		translate: 100%;
+	}
+
+	.nav-overlay {
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: left;
+		z-index: 1;
+		background-color: hsla(0, 0%, 0%, 0.408);
+		opacity: 0;
+		transition: opacity 400ms ease;
 	}
 
 	.btn-open-menu {
 		display: block;
 		justify-self: end;
 		align-self: center;
+		z-index: 2;
 	}
 
 	.btn-close-menu {

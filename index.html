@@ -8,7 +8,7 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./assets/images/favicon-32x32.png"
+			href="./assets/favicon-32x32.png"
 		/>
 
 		<link rel="stylesheet" href="styles/reset.css" />
@@ -17,26 +17,28 @@
 		<title>Frontend Mentor | News homepage</title>
 	</head>
 	<body>
+		<div class="nav-overlay"></div>
 		<main class="grid-flow">
-			<!-- grid area: logo -->
-			<img class="logo" src="assets/logo.svg" alt="Page Logo" />
-			<!-- grid area: open-menu -->
-			<img class="btn-open-menu" src="assets/icon-menu.svg" alt="Open Menu" />
-			<!-- grid area: nav -->
-			<nav>
-				<img
-					class="btn-close-menu"
-					src="assets/icon-menu-close.svg"
-					alt="Close Menu"
-				/>
-				<ul>
-					<li class="nav-item"><a href="#">Home</a></li>
-					<li class="nav-item"><a href="#">New</a></li>
-					<li class="nav-item"><a href="#">Popular</a></li>
-					<li class="nav-item"><a href="#">Trending</a></li>
-					<li class="nav-item"><a href="#">Categories</a></li>
-				</ul>
-			</nav>
+			<!-- grid area: header -->
+			<header>
+				<img class="logo" src="assets/logo.svg" alt="Page Logo" />
+				<!-- nav -->
+				<img class="btn-open-menu" src="assets/icon-menu.svg" alt="Open Menu" />
+				<nav>
+					<img
+						class="btn-close-menu"
+						src="assets/icon-menu-close.svg"
+						alt="Close Menu"
+					/>
+					<ul>
+						<li class="nav-item"><a href="#">Home</a></li>
+						<li class="nav-item"><a href="#">New</a></li>
+						<li class="nav-item"><a href="#">Popular</a></li>
+						<li class="nav-item"><a href="#">Trending</a></li>
+						<li class="nav-item"><a href="#">Categories</a></li>
+					</ul>
+				</nav>
+			</header>
 			<!-- grid area: hero -->
 			<picture>
 				<source
