@@ -15,12 +15,3 @@ closeMenuBtn.addEventListener("click", () => {
   navMenu.style.translate = "100%";
   navOverlay.style.zIndex = -1;
 });
-
-// DEBUG
-const screenWidth = document.querySelector(".screen-width");
-function setWidthDisplay() {
-  screenWidth.textContent = window.outerWidth;
-}
-window.addEventListener("resize", setWidthDisplay);
-
-setWidthDisplay();
